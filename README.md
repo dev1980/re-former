@@ -1,24 +1,46 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is from the microverse curriculum using The Odin Project
+The goal is to do practice with rails forms. 
+HTML Form / Railsy Forms with #form_tag / Railsy-er Forms with #form_for / Editing
 
-Things you may want to cover:
+## Setup & Use
+To run the project first clone the repo:
 
-* Ruby version
+```
+git clone https://github.com/dev1980/re-former.git
 
-* System dependencies
+```
+Then cd to the project folder:
+```
+cd re-former
+```
 
-* Configuration
+Upadte gems from the Gemfile:
+```
+bundle update
+```
 
-* Database creation
+Then migrate the database:
+```
+rails db:migrate
+```
+If there are any errors for the Gemfile, then please install as said in the error messages.
 
-* Database initialization
+Navigate through the project tables from the console:
+```
+rails console
+```
 
-* How to run the test suite
+To run all the tests:
+```
+rails db:migrate RAILS_ENV=test
+rails test
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Requirements
+Ruby version 2.6.4
+Rails version 6.0.0
+Bundler version 2.0.2
 
-* Deployment instructions
-
-* ...
+Authors: [Brham Dev Mahato](https://github.com/dev1980),  [Miguel Prada](https://github.com/mapra99)
