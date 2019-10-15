@@ -28,6 +28,10 @@
   <% end %>
 -->
 
+<% @user.errors.full_messages.each do |msg| %>
+  <span><%= msg %></span><br>
+<% end %>
+
     <%= form_for @user do |f| %>
     <%= f.label :username, "Username" %> <br>
     <%= f.text_field :username, placeholder: "Your user name here" %> <br>
